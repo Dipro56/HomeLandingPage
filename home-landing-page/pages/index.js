@@ -6,10 +6,13 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import search from '../public/assets/search.png';
 import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
-import image1 from '../public/assets/image1.png';
 import { Scrollbars } from 'react-custom-scrollbars-2';
 import HorizontalSlider from 'react-horizontal-slider';
 import FlatList from 'flatlist-react';
+
+//first image
+import image1 from '../public/assets/image1.png';
+import image2 from '../public/assets/image2.png';
 
 //frames
 
@@ -32,13 +35,6 @@ import icon4 from '../public/assets/icon4.png';
 import icon5 from '../public/assets/icon5.png';
 
 export default function Home() {
-  const imgData = [
-    { id: 1, image: image1 },
-    { id: 2, image: image1 },
-    { id: 3, image: image1 },
-  ];
-  const renderItem = ({ imgData }) => <Image src={imgData.image}></Image>;
-
   return (
     <div>
       <div className={`${styles['common-bg']}`}>
@@ -70,8 +66,7 @@ export default function Home() {
                 showsHorizontalScrollIndicator={false}
                 list={[
                   { i: 1, image: image1 },
-                  { i: 2, image: image1 },
-                  { i: 3, image: image1 },
+                  { i: 2, image: image2 },
                 ]}
                 renderItem={(item) => (
                   <div className="me-3">
@@ -144,9 +139,9 @@ export default function Home() {
                             Jindabad । ইশকে নাবী জিন্দাবাদ
                           </p>
                           <div className="d-flex justify-content-center">
-                            <button className="btn btn-primary btn-link text-decoration-none">
+                            <p className={`${styles['blue-text']}`}>
                               Tab to watch
-                            </button>
+                            </p>
                           </div>
                         </div>
                       </div>

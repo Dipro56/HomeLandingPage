@@ -13,6 +13,7 @@
 .scrollmenu {
   overflow: auto;
   white-space: nowrap;
+  
 }
 
 .scrollmenu div {
@@ -52,6 +53,14 @@
   font-family: Poppins;
   font-weight: 400;
 }
+
+.blue-text{
+  color: #2F80ED;
+  font-size: 10px;
+  font-family: Poppins;
+  font-weight: 400;
+}
+
 
 .category-text-style{
   color: #333333;
